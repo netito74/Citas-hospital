@@ -138,98 +138,13 @@
 
             <!-- Botones nuevos -->
             <div class="text-center mt-4 d-flex justify-content-center gap-3">
-                <button class="btn btn-warning btn-lg" onclick="mostrar('modificar')">Modificar Cita</button>
-                <button class="btn btn-danger btn-lg" onclick="mostrar('eliminar')">Eliminar Cita</button>
+            
                 <button class="btn btn-secondary btn-lg" onclick="mostrar('inicio')">Volver</button>
             </div>
 
         </div>
     </section>
 
-    <!-- MODIFICAR CITA -->
-    <section id="modificar" class="container pantalla d-none mt-5">
-        <div class="card shadow-lg p-5 bg-white rounded-4 mx-auto main-card">
-
-            <h2 class="text-center fw-bold text-warning mb-4">Modificar Cita</h2>
-
-            <table class="table table-striped mb-4" id="tablaModificar">
-                <thead class="table-warning">
-                    <tr>
-                        <th>Elegir</th>
-                        <th>Nombre</th>
-                        <th>Fecha</th>
-                        <th>Hora</th>
-                        <th>Motivo</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-
-            <form id="formModificar" class="row g-3 d-none">
-
-                <div class="col-md-6">
-                    <label class="form-label">Nombre</label>
-                    <input type="text" id="modNombre" class="form-control" required>
-                </div>
-
-                <div class="col-md-6">
-                    <label class="form-label">Edad</label>
-                    <input type="number" id="modEdad" class="form-control" required>
-                </div>
-
-                <div class="col-md-12">
-                    <label class="form-label">Motivo</label>
-                    <input type="text" id="modMotivo" class="form-control" required>
-                </div>
-
-                <div class="col-md-6">
-                    <label class="form-label">Fecha</label>
-                    <input type="date" id="modFecha" class="form-control" required>
-                </div>
-
-                <div class="col-md-6">
-                    <label class="form-label">Hora</label>
-                    <input type="time" id="modHora" class="form-control" required>
-                </div>
-
-                <div class="text-center mt-4">
-                    <button type="submit" class="btn btn-warning btn-lg">Guardar Cambios</button>
-                </div>
-
-            </form>
-
-            <div class="text-center mt-4">
-                <button class="btn btn-secondary btn-lg" onclick="mostrar('inicio')">Volver</button>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ELIMINAR CITA -->
-    <section id="eliminar" class="container pantalla d-none mt-5">
-        <div class="card shadow-lg p-5 bg-white rounded-4 mx-auto main-card">
-
-            <h2 class="text-center fw-bold text-danger mb-4">Eliminar Cita</h2>
-
-            <table class="table table-striped" id="tablaEliminar">
-                <thead class="table-danger">
-                    <tr>
-                        <th>Eliminar</th>
-                        <th>Nombre</th>
-                        <th>Fecha</th>
-                        <th>Hora</th>
-                        <th>Motivo</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-
-            <div class="text-center mt-4">
-                <button class="btn btn-secondary btn-lg" onclick="mostrar('inicio')">Volver</button>
-            </div>
-
-        </div>
-    </section>
 
     <!-- JAVASCRIPT DE TODO EL SISTEMA -->
    <script>
