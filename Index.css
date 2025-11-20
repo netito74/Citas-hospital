@@ -1,25 +1,23 @@
-/* Fondo general */
 body {
     background: #eef3f8;
 }
 
 /* Tamaño principal de la tarjeta */
 .main-card {
-    max-width: 900px;
+    max-width: 1100px;
 }
 
-/* Logo responsivo */
+/* Logo */
 .logo-hospital {
-    max-width: 90%;
-    height: auto;
+    max-height: 220px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
 }
 
-/* Tarjetas de misión/visión */
+/* Texto de misión y visión */
 .info-box {
     background: #ffffff;
-    padding: 20px;
+    padding: 25px;
     border-radius: 12px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.10);
     border-left-width: 6px !important;
@@ -27,42 +25,17 @@ body {
 
 .texto {
     text-align: justify;
-    line-height: 1.5;
-    font-size: 15px;
-    color: #444;
+    line-height: 1.6;
+    color: #555;
 }
 
 /* Título principal */
 .titulo {
-    font-size: 28px;
+    font-size: 32px;
+    letter-spacing: 1px;
 }
 
-/* Pantallas */
+/* Ocultar pantalla */
 .pantalla.d-none {
     display: none !important;
-}
-
-/* --- Mejoras para MÓVIL --- */
-@media (max-width: 768px) {
-
-    .main-card {
-        padding: 20px !important;
-    }
-
-    .titulo {
-        font-size: 22px;
-    }
-
-    .info-box {
-        padding: 15px;
-    }
-
-    .texto {
-        font-size: 14px;
-    }
-
-    .btn-lg {
-        font-size: 16px;
-        padding: 10px 16px;
-    }
 }
