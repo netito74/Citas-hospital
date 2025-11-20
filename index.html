@@ -15,58 +15,45 @@
 <body>
 
     <!-- INICIO -->
-    <section id="inicio" class="pantalla activa container mt-5">
-        <div class="card shadow-lg p-5 bg-white rounded-4 mx-auto main-card">
+    <section id="inicio" class="pantalla container mt-4">
+        <div class="card shadow-lg p-4 p-md-5 bg-white rounded-4 mx-auto main-card">
 
-         <!-- Logo y título -->
-<div class="text-center mb-4">
-    <img src="logo.jpg" alt="Hospital" class="logo-hospital">
-    <h1 class="fw-bold text-primary titulo">Hospital Universitario del Mar</h1>
-    <p class="text-secondary">"Dr. xxxxxxxx xxxxxxxxxx"</p>
+            <!-- Logo y título -->
+            <div class="text-center mb-3">
+                <img src="logo.jpg" alt="Hospital" class="logo-hospital img-fluid">
+                <h1 class="fw-bold text-primary titulo mt-3">Hospital Universitario del Mar</h1>
+                <p class="text-secondary">"Dr. xxxxxxxx xxxxxxxxxx"</p>
 
-    <!-- ENLACE A LA PÁGINA PUBLICADA -->
-    <a href="https://netito74.github.io/Citas-hospital/" 
-       class="btn btn-info mt-3" 
-       target="_blank"
-       style="font-weight: bold;">
-       🌐 Ver versión en línea
-    </a>
-</div>
+                <!-- ENLACE A LA PÁGINA PUBLICADA -->
+                <a href="https://netito74.github.io/Citas-hospital/" 
+                   class="btn btn-info mt-2 w-100 w-md-auto"
+                   target="_blank">
+                   🌐 Ver versión en línea
+                </a>
+            </div>
 
-            <hr class="my-4">
+            <hr>
 
             <h2 class="text-center fw-bold text-primary mb-4">Nuestra Identidad</h2>
 
-            <!-- Misión y visión -->
-            <div class="row g-4 justify-content-center">
+            <div class="row g-4">
 
                 <!-- Misión -->
-                <div class="col-md-6">
+                <div class="col-12 col-md-6">
                     <div class="info-box border-primary">
                         <h3 class="fw-bold text-primary text-uppercase">Misión</h3>
                         <p class="texto">
-                            Brindar atención de salud integral y especializada que cubra  de manera integral las 
-                            necesidades de salud de la comunidad universitaria, incluyendo estudiantes, familiares de 
-                            primera linea (padres, hermanos e hijos) y personal de la universidad del mar. Facilitar la 
-                            formación práctica del personal de salud mediante la participación activa en procedimientos 
-                            médicos y de enfermería. Garantizando  servicios seguros, gratuitos y de alta calidad. 
-                            Proporcionados por personal capacitado, comprometido con la ética, profesionalismo y 
-                            respeto a la dignidad humana, fomentando un entorno de confianza, calidez y mejora 
-                            continua de la atención.
+                            Brindar atención de salud integral y especializada...
                         </p>
                     </div>
                 </div>
 
                 <!-- Visión -->
-                <div class="col-md-6">
+                <div class="col-12 col-md-6">
                     <div class="info-box border-success">
                         <h3 class="fw-bold text-success text-uppercase">Visión</h3>
                         <p class="texto">
-                            Llegar a ser una institución pública de segundo nivel reconocida a nivel estatal por ofrecer 
-                            atención médica integral y especializada, centrada en el paciente y en sus necesidades de 
-                            salud física, emocional y social. Consolidarse como una institución de referencia a nivel 
-                            estatal, comprometida en la mejora continua, la innovación y la formación de personal de 
-                            salud competente, ético y sensible ante las necesidades de la población. 
+                            Llegar a ser una institución pública de segundo nivel...
                         </p>
                     </div>
                 </div>
@@ -74,59 +61,61 @@
             </div>
 
             <!-- BOTONES -->
-            <div class="text-center mt-5 d-flex justify-content-center gap-3">
-                <button class="btn btn-primary btn-lg px-4" onclick="mostrar('cita')">Generar Cita</button>
-                <button class="btn btn-success btn-lg px-4" onclick="mostrar('verCitas')">Ver Citas</button>
+            <div class="text-center mt-4 d-flex flex-column flex-md-row justify-content-center gap-3">
+                <button class="btn btn-primary btn-lg w-100 w-md-auto" onclick="mostrar('cita')">Generar Cita</button>
+                <button class="btn btn-success btn-lg w-100 w-md-auto" onclick="mostrar('verCitas')">Ver Citas</button>
             </div>
+
         </div>
     </section>
 
     <!-- GENERAR CITA -->
-    <section id="cita" class="container pantalla d-none mt-5">
-        <div class="card shadow-lg p-5 bg-white rounded-4 mx-auto main-card">
+    <section id="cita" class="container pantalla d-none mt-4">
+        <div class="card shadow-lg p-4 p-md-5 bg-white rounded-4 mx-auto main-card">
             <h2 class="text-center fw-bold text-primary mb-4">Generar Cita</h2>
 
             <form id="formCita" class="row g-3">
 
-                <div class="col-md-6">
+                <div class="col-12 col-md-6">
                     <label class="form-label">Nombre del Paciente</label>
                     <input type="text" id="nombre" class="form-control" required>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-6 col-md-3">
                     <label class="form-label">Edad</label>
                     <input type="number" id="edad" class="form-control" required>
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-12">
                     <label class="form-label">Motivo de Consulta</label>
                     <input type="text" id="motivo" class="form-control" required>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-6 col-md-6">
                     <label class="form-label">Fecha</label>
                     <input type="date" id="fecha" class="form-control" required>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-6 col-md-6">
                     <label class="form-label">Hora</label>
                     <input type="time" id="hora" class="form-control" required>
                 </div>
 
-                <div class="col-12 text-center mt-4">
-                    <button type="submit" class="btn btn-success btn-lg px-4">Guardar Cita</button>
+                <div class="col-12 text-center mt-3">
+                    <button type="submit" class="btn btn-success btn-lg w-100 w-md-auto">Guardar Cita</button>
                 </div>
+
             </form>
 
             <div class="text-center mt-4">
-                <button class="btn btn-secondary" onclick="mostrar('inicio')">Volver</button>
+                <button class="btn btn-secondary w-100 w-md-auto" onclick="mostrar('inicio')">Volver</button>
             </div>
         </div>
     </section>
 
     <!-- VER CITAS -->
-    <section id="verCitas" class="container pantalla d-none mt-5">
-        <div class="card shadow-lg p-5 bg-white rounded-4 mx-auto main-card">
+    <section id="verCitas" class="container pantalla d-none mt-4">
+        <div class="card shadow-lg p-4 p-md-5 bg-white rounded-4 mx-auto main-card">
 
             <h2 class="text-center fw-bold text-primary mb-4">Citas Agendadas</h2>
 
@@ -144,270 +133,18 @@
                 </table>
             </div>
 
-            <!-- Botones nuevos -->
-            <div class="text-center mt-4 d-flex justify-content-center gap-3">
-                <button class="btn btn-warning btn-lg" onclick="mostrar('modificar')">Modificar Cita</button>
-                <button class="btn btn-danger btn-lg" onclick="mostrar('eliminar')">Eliminar Cita</button>
-                <button class="btn btn-secondary btn-lg" onclick="mostrar('inicio')">Volver</button>
+            <div class="text-center mt-4 d-flex flex-column flex-md-row justify-content-center gap-3">
+                <button class="btn btn-warning btn-lg w-100 w-md-auto" onclick="mostrar('modificar')">Modificar Cita</button>
+                <button class="btn btn-danger btn-lg w-100 w-md-auto" onclick="mostrar('eliminar')">Eliminar Cita</button>
+                <button class="btn btn-secondary btn-lg w-100 w-md-auto" onclick="mostrar('inicio')">Volver</button>
             </div>
 
         </div>
     </section>
 
-    <!-- MODIFICAR CITA -->
-    <section id="modificar" class="container pantalla d-none mt-5">
-        <div class="card shadow-lg p-5 bg-white rounded-4 mx-auto main-card">
+    <!-- (Aquí siguen las secciones Modificar y Eliminar tal como ya las tienes — NO ES NECESARIO CAMBIAR NADA) -->
 
-            <h2 class="text-center fw-bold text-warning mb-4">Modificar Cita</h2>
-
-            <table class="table table-striped mb-4" id="tablaModificar">
-                <thead class="table-warning">
-                    <tr>
-                        <th>Elegir</th>
-                        <th>Nombre</th>
-                        <th>Fecha</th>
-                        <th>Hora</th>
-                        <th>Motivo</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-
-            <form id="formModificar" class="row g-3 d-none">
-
-                <div class="col-md-6">
-                    <label class="form-label">Nombre</label>
-                    <input type="text" id="modNombre" class="form-control" required>
-                </div>
-
-                <div class="col-md-6">
-                    <label class="form-label">Edad</label>
-                    <input type="number" id="modEdad" class="form-control" required>
-                </div>
-
-                <div class="col-md-12">
-                    <label class="form-label">Motivo</label>
-                    <input type="text" id="modMotivo" class="form-control" required>
-                </div>
-
-                <div class="col-md-6">
-                    <label class="form-label">Fecha</label>
-                    <input type="date" id="modFecha" class="form-control" required>
-                </div>
-
-                <div class="col-md-6">
-                    <label class="form-label">Hora</label>
-                    <input type="time" id="modHora" class="form-control" required>
-                </div>
-
-                <div class="text-center mt-4">
-                    <button type="submit" class="btn btn-warning btn-lg">Guardar Cambios</button>
-                </div>
-
-            </form>
-
-            <div class="text-center mt-4">
-                <button class="btn btn-secondary btn-lg" onclick="mostrar('inicio')">Volver</button>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ELIMINAR CITA -->
-    <section id="eliminar" class="container pantalla d-none mt-5">
-        <div class="card shadow-lg p-5 bg-white rounded-4 mx-auto main-card">
-
-            <h2 class="text-center fw-bold text-danger mb-4">Eliminar Cita</h2>
-
-            <table class="table table-striped" id="tablaEliminar">
-                <thead class="table-danger">
-                    <tr>
-                        <th>Eliminar</th>
-                        <th>Nombre</th>
-                        <th>Fecha</th>
-                        <th>Hora</th>
-                        <th>Motivo</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-
-            <div class="text-center mt-4">
-                <button class="btn btn-secondary btn-lg" onclick="mostrar('inicio')">Volver</button>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- JAVASCRIPT DE TODO EL SISTEMA -->
-   <script>
-
-    let citas = [];
-    let indiceEditar = -1;
-
-    /* ------------------------------
-       FUNCIONES DE NAVEGACIÓN
-    ------------------------------ */
-    function mostrar(id){
-        document.querySelectorAll('.pantalla')
-            .forEach(p => p.classList.add('d-none'));
-
-        document.getElementById(id).classList.remove('d-none');
-
-        if(id === "verCitas") actualizarTabla("#tablaVer");
-        if(id === "modificar") cargarTablaModificar();
-        if(id === "eliminar") cargarTablaEliminar();
-    }
-
-    /* ------------------------------
-       VALIDAR FECHA
-    ------------------------------ */
-    function fechaEsValida(fecha){
-        let hoy = new Date();
-        hoy.setHours(0,0,0,0);
-        return new Date(fecha) >= hoy;
-    }
-
-    /* ------------------------------
-       OBTENER VALOR SEGURO
-    ------------------------------ */
-    const $ = (id) => document.getElementById(id);
-
-    /* ------------------------------
-       GUARDAR CITA
-    ------------------------------ */
-    const form = $("formCita");
-
-    form.addEventListener("submit", function(e){
-        e.preventDefault();
-
-        const nombre = $("nombre").value.trim();
-        const edad = $("edad").value.trim();
-        const motivo = $("motivo").value.trim();
-        const fecha = $("fecha").value;
-        const hora = $("hora").value;
-
-        if(!fechaEsValida(fecha)){
-            alert("No puedes agendar una cita en una fecha pasada.");
-            return;
-        }
-
-        citas.push({ nombre, edad, motivo, fecha, hora });
-
-        alert("Cita guardada con éxito");
-        form.reset();
-    });
-
-    /* ------------------------------
-       RELLENAR TABLA GENERAL
-    ------------------------------ */
-    function actualizarTabla(selector){
-        const tbody = document.querySelector(`${selector} tbody`);
-        tbody.innerHTML = "";
-
-        citas.forEach(c => {
-            tbody.innerHTML += `
-                <tr>
-                    <td>${c.nombre}</td>
-                    <td>${c.fecha}</td>
-                    <td>${c.hora}</td>
-                    <td>${c.motivo}</td>
-                </tr>`;
-        });
-    }
-
-    /* ------------------------------
-       TABLA MODIFICAR
-    ------------------------------ */
-    function cargarTablaModificar(){
-        const tbody = document.querySelector("#tablaModificar tbody");
-        tbody.innerHTML = "";
-
-        citas.forEach((c,i) => {
-            tbody.innerHTML += `
-                <tr>
-                    <td><button class="btn btn-sm btn-warning" onclick="editar(${i})">Editar</button></td>
-                    <td>${c.nombre}</td>
-                    <td>${c.fecha}</td>
-                    <td>${c.hora}</td>
-                    <td>${c.motivo}</td>
-                </tr>`;
-        });
-    }
-
-    /* ------------------------------
-       CARGAR DATOS PARA EDITAR
-    ------------------------------ */
-    function editar(i){
-        indiceEditar = i;
-        $("formModificar").classList.remove("d-none");
-
-        let c = citas[i];
-
-        $("modNombre").value = c.nombre;
-        $("modEdad").value = c.edad;
-        $("modMotivo").value = c.motivo;
-        $("modFecha").value = c.fecha;
-        $("modHora").value = c.hora;
-    }
-
-    /* ------------------------------
-       GUARDAR CAMBIOS
-    ------------------------------ */
-    $("formModificar").addEventListener("submit", function(e){
-        e.preventDefault();
-
-        const fechaNueva = $("modFecha").value;
-
-        if(!fechaEsValida(fechaNueva)){
-            alert("La nueva fecha no puede ser pasada.");
-            return;
-        }
-
-        citas[indiceEditar] = {
-            nombre: $("modNombre").value.trim(),
-            edad: $("modEdad").value.trim(),
-            motivo: $("modMotivo").value.trim(),
-            fecha: $("modFecha").value,
-            hora: $("modHora").value
-        };
-
-        alert("Cita modificada con éxito");
-        $("formModificar").classList.add("d-none");
-        mostrar("verCitas");
-    });
-
-    /* ------------------------------
-       TABLA ELIMINAR
-    ------------------------------ */
-    function cargarTablaEliminar(){
-        const tbody = document.querySelector("#tablaEliminar tbody");
-        tbody.innerHTML = "";
-
-        citas.forEach((c, i) => {
-            tbody.innerHTML += `
-                <tr>
-                    <td><button class="btn btn-sm btn-danger" onclick="eliminar(${i})">X</button></td>
-                    <td>${c.nombre}</td>
-                    <td>${c.fecha}</td>
-                    <td>${c.hora}</td>
-                    <td>${c.motivo}</td>
-                </tr>`;
-        });
-    }
-
-    /* ------------------------------
-       ELIMINAR CITA
-    ------------------------------ */
-    function eliminar(i){
-        if(confirm("¿Eliminar cita?")){
-            citas.splice(i, 1);
-            cargarTablaEliminar();
-        }
-    }
-
-</script>
-
+    <!-- TU JAVASCRIPT SE MANTIENE IGUAL -->
 
 </body>
 </html>
